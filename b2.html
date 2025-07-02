@@ -4,19 +4,405 @@
   <meta charset="UTF-8">
   <title>B2 – Vantage</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body { font-family: Arial, sans-serif; padding: 2em; }
+    .question-block { margin-bottom: 1.2em; }
+    label { margin-right: 1em; }
+    .summary-block { margin-top: 2em; border-top: 1px solid #ccc; padding-top: 1em; }
+  </style>
 </head>
 <body>
-  <header>
-    <img src="blc-logo.png" alt="WU Business Language Center Logo" class="logo">
-    <h1>B2 – Vantage</h1>
-    <p>Self-Assessment Checklist</p>
-  </header>
-  <main>
-    <p>This is a placeholder for the interactive checklist for B2.</p>
-    <!-- The real content is embedded in the final version -->
-  </main>
-  <footer>
-    <p><a href="index.html">← Back to overview</a></p>
-  </footer>
+  <h1>B2 – Vantage</h1>
+  <form id="checklistForm">
+    
+      <div class="question-block">
+        <p>I can understand in detail what is said to me in a standard language, even in a noisy environment.</p>
+        <label><input type="radio" name="q1" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q1" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q1" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can understand lectures or talks in my field if they are well-structured and the topic is familiar to me.</p>
+        <label><input type="radio" name="q2" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q2" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q2" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can understand TV reports, live interviews, talk shows, series and most films, provided that they are in standard language and not dialect.</p>
+        <label><input type="radio" name="q3" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q3" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q3" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can understand the main points of complex speech on concrete and abstract topics if they are in standard language. I can also understand technical discussions in my field.</p>
+        <label><input type="radio" name="q4" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q4" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q4" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can use a variety of strategies to improve comprehension (for instance, listening for main points or using contextual clues to check comprehension).</p>
+        <label><input type="radio" name="q5" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q5" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q5" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can begin, maintain, and end a conversation in a natural way and can easily switch between listening and speaking roles.</p>
+        <label><input type="radio" name="q6" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q6" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q6" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can exchange large amounts of factual information within my field with a certain degree of confidence.</p>
+        <label><input type="radio" name="q7" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q7" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q7" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can express degrees of emotion and highlight what is important to me about events or experiences.</p>
+        <label><input type="radio" name="q8" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q8" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q8" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can actively participate in extended conversations on most topics of general interest.</p>
+        <label><input type="radio" name="q9" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q9" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q9" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can actively participate in talks and discussions in familiar situations, including giving an opinion, clearly explaining my point of view, weighing suggestions, and forming and responding to hypotheses.</p>
+        <label><input type="radio" name="q10" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q10" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q10" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>In discussion, I can give reasons for and defend my explanations, arguments, and comments.</p>
+        <label><input type="radio" name="q11" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q11" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q11" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can help keep a conversation going on a familiar topic (for instance, by confirming what I understand or by inviting others to say something).</p>
+        <label><input type="radio" name="q12" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q12" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q12" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can conduct and interview, including confirming if I have understood something correctly and following up on interesting replies.</p>
+        <label><input type="radio" name="q13" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q13" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q13" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can give clear and detailed descriptions and reports on a wide range of topics within my field of interests.</p>
+        <label><input type="radio" name="q14" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q14" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q14" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can understand and orally summarize short extracts from news items, interviews, or reports that contain opinion, argument and discussion.</p>
+        <label><input type="radio" name="q15" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q15" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q15" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can understand and orally summarize the plot and the sequence of events in an extract from a film or a play.</p>
+        <label><input type="radio" name="q16" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q16" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q16" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can form a logical chain of thought and link my ideas.</p>
+        <label><input type="radio" name="q17" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q17" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q17" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can explain a viewpoint on a problem and weigh the pros and cons of various options.</p>
+        <label><input type="radio" name="q18" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q18" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q18" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can speculate about causes, consequences, an hypothetical situations.</p>
+        <label><input type="radio" name="q19" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q19" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q19" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can read very independently and use the appropriate reference work when necessary.</p>
+        <label><input type="radio" name="q20" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q20" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q20" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can read a variety of factual and literary texts, summarize the content orally, and comment on the main topics and different viewpoints.</p>
+        <label><input type="radio" name="q21" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q21" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q21" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can read and understand articles and reports on current issues, in which the authors express specific attitudes and viewpoints.</p>
+        <label><input type="radio" name="q22" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q22" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q22" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can read extended reports on current topics and tell the difference between facts, opinions, and conclusions.</p>
+        <label><input type="radio" name="q23" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q23" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q23" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can understand in detail texts on topics within my field.</p>
+        <label><input type="radio" name="q24" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q24" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q24" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can also read and understand technical articles outside my field if I occasionally use a dictionary to check a word or phrase.</p>
+        <label><input type="radio" name="q25" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q25" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q25" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can read reviews about the content and criticism of cultural topics (films, plays, books, and concerts) and summarize the main points.</p>
+        <label><input type="radio" name="q26" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q26" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q26" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can read correspondence on topics within my field and grasp the main points.</p>
+        <label><input type="radio" name="q27" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q27" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q27" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can briefly glance through a manual (for instance, for a computer program) an find and understand the relevant explanations and held for a particular problem.</p>
+        <label><input type="radio" name="q28" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q28" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q28" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can quickly grasp the content and significance of news items, articles, and reports on topics related to my interests or job and can decide if they are worth reading in more detail.</p>
+        <label><input type="radio" name="q29" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q29" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q29" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can glance through non-fiction books written for a broad audience (for instance, on the history of a flight), selecting sections relevant to my topic and reading them more closely with the aid of a dictionary.</p>
+        <label><input type="radio" name="q30" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q30" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q30" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can read novels, plays, and short stories, follow the chain of thought and events, and thus understand the overall meaning and many details.</p>
+        <label><input type="radio" name="q31" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q31" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q31" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can recognize the reasons for characters’ actions and their consequences on the plot in a narrative of dramatic text.</p>
+        <label><input type="radio" name="q32" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q32" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q32" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can write clear and detailed essays, reports, or presentations on a variety of topics related to my field of interests.</p>
+        <label><input type="radio" name="q33" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q33" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q33" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can write summaries of articles on topics of general interest.</p>
+        <label><input type="radio" name="q34" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q34" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q34" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can summaries in writing information from a variety of sources and media.</p>
+        <label><input type="radio" name="q35" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q35" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q35" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can discuss something in an essay, give reasons for or against a particular viewpoint, and explain the pros and cons of various alternatives.</p>
+        <label><input type="radio" name="q36" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q36" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q36" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can discuss something systematically in an essay or report, highlight the crucial points in an appropriate way, and provide supporting details.</p>
+        <label><input type="radio" name="q37" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q37" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q37" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can give a written opinion on a student paper or dossier and provide positive and negative points of criticism.</p>
+        <label><input type="radio" name="q38" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q38" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q38" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can write fairly long and easy-to-understand stories.</p>
+        <label><input type="radio" name="q39" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q39" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q39" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can write about events and real or fictional experiences in a detailed and easily readable way.</p>
+        <label><input type="radio" name="q40" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q40" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q40" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can write a short review of a film or a book.</p>
+        <label><input type="radio" name="q41" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q41" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q41" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can express different moods and feelings in private letters, tell what happened on a certain day, and make clear what is particularly important to me about the event.</p>
+        <label><input type="radio" name="q42" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q42" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q42" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can write a letter to the editor in favor of or against a particular viewpoint.</p>
+        <label><input type="radio" name="q43" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q43" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q43" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can write about topics within my field of interests in an easily understandable and mostly correct way.</p>
+        <label><input type="radio" name="q44" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q44" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q44" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can use set phrases such as “That is a difficult question” to keep the floor and buy time to think of how to say something.</p>
+        <label><input type="radio" name="q45" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q45" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q45" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can catch my own major mistakes and watch for these mistakes when speaking.</p>
+        <label><input type="radio" name="q46" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q46" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q46" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can normally correct my own slips of the tongue or mistakes.</p>
+        <label><input type="radio" name="q47" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q47" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q47" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can communicate spontaneously and fluently enough that I can carry on a conversation with a native speaker without being a burden on my partner or myself.</p>
+        <label><input type="radio" name="q48" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q48" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q48" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can pass on detailed information without error.</p>
+        <label><input type="radio" name="q49" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q49" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q49" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>I can speak at a fairly even pace for a longer period of time. Even when I hesitate briefly to search for a word or expression, I do not need to take a long pause.</p>
+        <label><input type="radio" name="q50" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q50" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q50" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>For the most part, I can use the grammar correctly and can correct my own mistakes when they lead to misunderstandings.</p>
+        <label><input type="radio" name="q51" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q51" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q51" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+      <div class="question-block">
+        <p>My vocabulary is broad enough to allow me to write in detail about everyday topics or topics within my field of interests.</p>
+        <label><input type="radio" name="q52" value="can"> ✅ I can do this</label>
+        <label><input type="radio" name="q52" value="goal"> 🎯 I want to improve this</label>
+        <label><input type="radio" name="q52" value="not"> 🚫 Not important for me</label>
+      </div>
+        
+    <button type="button" onclick="showSummary()">Show Summary</button>
+  </form>
+  <div id="summary" class="summary-block" style="display:none;">
+    <h2>📝 Your Summary</h2>
+    <div><strong>✅ I can do this:</strong><ul id="canList"></ul></div>
+    <div><strong>🎯 I want to improve this:</strong><ul id="goalList"></ul></div>
+    <div><strong>🚫 Not important for me:</strong><ul id="notList"></ul></div>
+  </div>
+
+<script>
+function showSummary() {
+  const summary = { can: [], goal: [], not: [] };
+  const questions = document.querySelectorAll('.question-block');
+  questions.forEach((block, i) => {
+    const selected = block.querySelector('input[type="radio"]:checked');
+    if (selected) {
+      summary[selected.value].push(block.querySelector('p').textContent);
+    }
+  });
+  document.getElementById('canList').innerHTML = summary.can.map(q => '<li>' + q + '</li>').join('');
+  document.getElementById('goalList').innerHTML = summary.goal.map(q => '<li>' + q + '</li>').join('');
+  document.getElementById('notList').innerHTML = summary.not.map(q => '<li>' + q + '</li>').join('');
+  document.getElementById('summary').style.display = 'block';
+}
+</script>
 </body>
 </html>
