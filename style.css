@@ -19,21 +19,6 @@ header {
 main {
   padding: 2em;
 }
-.level-list {
-  list-style: none;
-  padding: 0;
-}
-.level-list li {
-  margin: 1em 0;
-}
-.level-list a {
-  color: #005691;
-  text-decoration: none;
-  font-weight: bold;
-}
-.level-list a:hover {
-  text-decoration: underline;
-}
 footer {
   background-color: #eee;
   text-align: center;
